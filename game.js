@@ -24,7 +24,7 @@ $(document).on("click", function() {
     started = true; }
 });
 
-if (started) {
+if (started===true) {
 $(".btn").on("click", function() {
     var userChosenColor = $(this).attr("id");
     userClickedPattern.push(userChosenColor);
