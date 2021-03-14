@@ -18,7 +18,7 @@ function nextSequence () {
 };
 //};
 
-$(document).on("keydown", function() {
+$(document).on("click", function() {
     if (!started) {
     nextSequence();
     started = true; }
