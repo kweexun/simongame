@@ -18,12 +18,13 @@ function nextSequence () {
 };
 //};
 
-$("body").on("dblclick", function() {
+$(document).on("click", function() {
     if (!started) {
     nextSequence();
     started = true; }
 });
 
+if (started) {
 $(".btn").on("click", function() {
     var userChosenColor = $(this).attr("id");
     userClickedPattern.push(userChosenColor);
@@ -31,7 +32,7 @@ $(".btn").on("click", function() {
     animatedPress(userChosenColor);
     checkAnswer(userClickedPattern.length);
     //setTimeout(function() {nextSequence()}, 1000);
-});
+}); };
 
 function playSound (name) {
     var newSound = new Audio ('sounds/' + name + '.mp3');
