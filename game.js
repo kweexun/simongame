@@ -18,7 +18,7 @@ function nextSequence () {
 };
 //};
 
-$(document).on("dblclick", function() {
+$("body").on("dblclick", function() {
     if (!started) {
     nextSequence();
     started = true; }
