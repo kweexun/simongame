@@ -18,7 +18,7 @@ function nextSequence () {
 };
 //};
 
-$(document).on("click", function() {
+$(document).on("dbclick", function() {
     if (!started) {
     nextSequence();
     started = true; }
